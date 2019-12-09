@@ -13,6 +13,7 @@ from timeit import default_timer as timer
     python query_search.py -d COREL -q corel_0000000303_512 -t LINEAR
 '''
 
+#python scripts/query_search.py --database NISTER --query bcbg --indextype jsp --relevant 50
 
 ######## Program parameters
 import argparse
@@ -40,7 +41,7 @@ args = parser.parse_args()
 
 ## Set paths
 img_dir="/share/esir3/VO/Images/" + args.db_name + "/"
-if (args.db_name == "COREL" || args.db_name == "NISTER" ):
+if (args.db_name == "COREL" or args.db_name == "NISTER" ):
     img_dir="/share/esir3/VO/Images/" + args.db_name + "_queries/"
 output_dir="./results/"+ args.db_name
 resfilename = "./results/" + args.query_name + "-" + args.indextype

@@ -1,6 +1,8 @@
 .DS_STORE
 .idea
 [Ss]ources/
+[Ii]mages/
+[Dd]ata/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
